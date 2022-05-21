@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Clean Blog - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="index.html">:leo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html"
+                >Sample Post</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Header-->
+    <header
+      class="masthead"
+      style="
+        background-image: url('data:image/jpeg;base64,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');
+      "
+    >
+      <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="page-heading">
+              <h1>Contact Me</h1>
+              <span class="subheading">Have questions? I have answers.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content-->
+    <main class="mb-4">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <p>
+              Want to get in touch? Fill out the form below to send me a message
+              and I will get back to you as soon as possible!
+            </p>
+            <div class="my-5">
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- * * SB Forms Contact Form * *-->
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- This form is pre-integrated with SB Forms.-->
+              <!-- To make this form functional, sign up at-->
+              <!-- https://startbootstrap.com/solution/contact-forms-->
+              <!-- to get an API token!-->
+              <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="form-floating">
+                  <input
+                    class="form-control"
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name..."
+                    data-sb-validations="required"
+                  />
+                  <label for="name">Name</label>
+                  <div
+                    class="invalid-feedback"
+                    data-sb-feedback="name:required"
+                  >
+                    A name is required.
+                  </div>
+                </div>
+                <div class="form-floating">
+                  <input
+                    class="form-control"
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email..."
+                    data-sb-validations="required,email"
+                  />
+                  <label for="email">Email address</label>
+                  <div
+                    class="invalid-feedback"
+                    data-sb-feedback="email:required"
+                  >
+                    An email is required.
+                  </div>
+                  <div class="invalid-feedback" data-sb-feedback="email:email">
+                    Email is not valid.
+                  </div>
+                </div>
+                <div class="form-floating">
+                  <input
+                    class="form-control"
+                    id="phone"
+                    type="tel"
+                    placeholder="Enter your phone number..."
+                    data-sb-validations="required"
+                  />
+                  <label for="phone">Phone Number</label>
+                  <div
+                    class="invalid-feedback"
+                    data-sb-feedback="phone:required"
+                  >
+                    A phone number is required.
+                  </div>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    placeholder="Enter your message here..."
+                    style="height: 12rem;"
+                    data-sb-validations="required"
+                  ></textarea>
+                  <label for="message">Message</label>
+                  <div
+                    class="invalid-feedback"
+                    data-sb-feedback="message:required"
+                  >
+                    A message is required.
+                  </div>
+                </div>
+                <br />
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                  <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                    To activate this form, sign up at
+                    <br />
+                    <a href="https://startbootstrap.com/solution/contact-forms"
+                      >https://startbootstrap.com/solution/contact-forms</a
+                    >
+                  </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                  <div class="text-center text-danger mb-3">
+                    Error sending message!
+                  </div>
+                </div>
+                <!-- Submit Button-->
+                <button
+                  class="btn btn-primary text-uppercase disabled"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="border-top">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPVcWtzDgFgTcrlZNvlgBHdwJjhWgHRhqLDrkhBwhzrJSjDvPNHGkHDmlZXcQVzqqZmlCS"
+                >
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-google fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/l1e2o3e4i5e6i8/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/supphant">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div class="small text-center text-muted fst-italic">
+              supphanatleo@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>
